@@ -46,3 +46,15 @@ function task7(array) {
     });
     return evenSum / notEvenSum;
 }
+
+function task8() {
+    const number = prompt('Введите число');
+    if (!isNaN(number)) {
+        console.log(number);
+        const arrayNumbers = number
+            .split('')
+            .map((element) => Number(element) + 1)
+            .join('');
+        return arrayNumbers;
+    }
+}
