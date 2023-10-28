@@ -1,1 +1,43 @@
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+.links a {
+    color: #000;
+    font-size: 1.4rem;
+}
 
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    gap: 1rem;
+    flex-direction: column;
+}
+.task span {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+.task a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3rem;
+    background-color: #794f45;
+    color: #fff;
+    padding: 0 2rem;
+    border-radius: 1rem;
+}
