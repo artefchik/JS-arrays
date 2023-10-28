@@ -97,5 +97,5 @@ function task10() {
     const sumValues = arrayValues.reduce((accum, element) => accum + element);
     const sumTotal = sumKeys + sumValues;
 
-    console.log(`Сумма массива с ключами ${sumKeys}\n Сумма массива со значениями ${sumValues}\n Общая сумма ${sumTotal}`);
+    return (`Сумма массива с ключами ${sumKeys}\n Сумма массива со значениями ${sumValues}\n Общая сумма ${sumTotal}`);
 }
