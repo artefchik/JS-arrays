@@ -33,3 +33,16 @@ function task6(array) {
     array.push(firstItem);
     return array;
 }
+
+function task7(array) {
+    let evenSum = 0;
+    let notEvenSum = 0;
+    array.forEach((element, index) => {
+        if (index % 2 === 0) {
+            evenSum += element;
+        } else {
+            notEvenSum += element;
+        }
+    });
+    return evenSum / notEvenSum;
+}
