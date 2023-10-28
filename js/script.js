@@ -65,3 +65,37 @@ function task9() {
     const arrayStringFiltered = arrayString.filter((element) => element.includes('http://.'));
     return arrayStringFiltered;
 }
+
+function task10() {
+    const data = [
+        {
+            1: 11,
+            2: 12,
+            3: 13,
+        },
+        {
+            1: 21,
+            2: 22,
+            3: 23,
+        },
+        {
+            1: 24,
+            2: 25,
+            3: 26,
+        },
+    ];
+    let arrayKeys = [];
+    let arrayValues = [];
+
+    data.forEach((element) => {
+        for ([key, value] of Object.entries(element)) {
+            arrayKeys.push(Number(key));
+            arrayValues.push(value);
+        }
+    });
+    const sumKeys = arrayKeys.reduce((accum, element) => accum + element);
+    const sumValues = arrayValues.reduce((accum, element) => accum + element);
+    const sumTotal = sumKeys + sumValues;
+
+    console.log(`Сумма массива с ключами ${sumKeys}\n Сумма массива со значениями ${sumValues}\n Общая сумма ${sumTotal}`);
+}
