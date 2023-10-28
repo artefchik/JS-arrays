@@ -19,7 +19,12 @@ function task3(array) {
     return array.every((elem) => elem % 2 === 0);
 }
 
-function task4(array){
+function task4(array) {
     return array.filter((element) => element % 5 === 0);
 }
 
+function task5(array) {
+    const sum = array.reduce((accum, element) => accum + element);
+    return (sum / array.length).toFixed(1);
+
+}
