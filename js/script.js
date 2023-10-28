@@ -18,3 +18,8 @@ function task2() {
 function task3(array) {
     return array.every((elem) => elem % 2 === 0);
 }
+
+function task4(array){
+    return array.filter((element) => element % 5 === 0);
+}
+
