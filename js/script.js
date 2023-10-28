@@ -26,5 +26,10 @@ function task4(array) {
 function task5(array) {
     const sum = array.reduce((accum, element) => accum + element);
     return (sum / array.length).toFixed(1);
+}
 
+function task6(array) {
+    const firstItem = array.shift();
+    array.push(firstItem);
+    return array;
 }
