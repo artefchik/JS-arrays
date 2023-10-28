@@ -3,11 +3,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+ 
 }
 a {
     text-decoration: none;
 }
 .links {
+  
     display: flex;
     flex-direction: column;
     gap: 1.4rem;
@@ -30,6 +32,10 @@ a {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 0.8rem;
+}
+.task h2 {
+    max-width: 70%;
+    text-align: center;
 }
 .task a {
     display: inline-flex;
