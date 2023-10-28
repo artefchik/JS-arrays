@@ -58,3 +58,10 @@ function task8() {
         return arrayNumbers;
     }
 }
+
+const arrayString = ['http://.hjfrf', 'https://.', 'http://.'];
+function task9() {
+    console.log(arrayString);
+    const arrayStringFiltered = arrayString.filter((element) => element.includes('http://.'));
+    return arrayStringFiltered;
+}
