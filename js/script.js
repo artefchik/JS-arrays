@@ -62,7 +62,7 @@ function task8() {
 const arrayString = ['http://.hjfrf', 'https://.', 'http://.'];
 function task9() {
     console.log(arrayString);
-    const arrayStringFiltered = arrayString.filter((element) => element.includes('http://.'));
+    const arrayStringFiltered = arrayString.filter((element) => element.startsWith('http://.'));
     return arrayStringFiltered;
 }
 
@@ -97,5 +97,5 @@ function task10() {
     const sumValues = arrayValues.reduce((accum, element) => accum + element);
     const sumTotal = sumKeys + sumValues;
 
-    console.log(`Сумма массива с ключами ${sumKeys}\n Сумма массива со значениями ${sumValues}\n Общая сумма ${sumTotal}`);
+    return (`Сумма массива с ключами ${sumKeys}\n Сумма массива со значениями ${sumValues}\n Общая сумма ${sumTotal}`);
 }
