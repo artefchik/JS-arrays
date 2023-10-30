@@ -62,7 +62,7 @@ function task8() {
 const arrayString = ['http://.hjfrf', 'https://.', 'http://.'];
 function task9() {
     console.log(arrayString);
-    const arrayStringFiltered = arrayString.filter((element) => element.includes('http://.'));
+    const arrayStringFiltered = arrayString.filter((element) => element.startsWith('http://.'));
     return arrayStringFiltered;
 }
 
